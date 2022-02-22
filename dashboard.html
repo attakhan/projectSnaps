@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined"
+    /> -->
+    <!-- <link
+      href="//cdn.materialdesignicons.com/1.5.54/css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" media="all" />
+    <title>afiniti - Phattail</title>
+  </head>
+
+  <body class="darkBg">
+    <div id="app" class="app">
+      <header id="header">
+        <div class="client-details">
+          <a class="client-logo">
+            <img
+              src="assets/images/client/caesars-logo.png"
+              alt="Caesars Inc."
+              height="24px"
+            />
+          </a>
+          <!-- <span class="client-locale" -->
+            <!-- ><i class="material-icons">room</i> US</span -->
+          <!-- > -->
+          <!-- <a href="#" title="Show Filter" class="show-filters"> -->
+            <!-- <i class="material-icons">tune</i> -->
+          <!-- </a> -->
+        </div>
+        <div class="search-container"></div>
+        <div class="controls-container">
+          <a href=""><i class="material-icons">search</i></a>
+          <a href=""><i class="material-icons">print</i></a>
+          <div class="notification-container">
+            <a href="#"><i class="material-icons">notifications</i></a>
+            <div class="dropdown __hidehtmlver notifications">
+              <h5><span>4</span> New Notifications</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="material-icons green-txt">check</i>
+                    <span>
+                      <notification>Login Campaign Successful</notification>
+                      <time>01:45:10</time>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="active">
+                    <i class="material-icons blue-txt">access_time</i>
+                    <span>
+                      <notification>Login Campaign Successful</notification>
+                      <time>01:45:10</time>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="material-icons red">power_settings_new</i>
+                    <span>
+                      <notification>Login Campaign Successful</notification>
+                      <time>01:45:10</time>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="material-icons green-txt">check</i>
+                    <span>
+                      <notification>Login Campaign Successful</notification>
+                      <time>01:45:10</time>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Show all notifications</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="profile-container">
+            <a href="#" class="profile-details">
+              <span class="text">
+                <div class="name">Jennifer Ronald</div>
+                <div class="designation">Manager</div>
+              </span>
+              <span class="image">
+                <img src="assets/images/profile-01.png" alt="" />
+              </span>
+            </a>
+            <div class="dropdown __hidehtmlver user">
+              <div class="image">
+                <img src="assets/images/profile-01.png" alt="" />
+              </div>
+              <div class="text">
+                <name>Jennifer Ronald</name>
+                <designation>Manager</designation>
+              </div>
+              <ul>
+                <li>
+                  <a href="#"><i class="material-icons">person</i> Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="active"
+                    ><i class="material-icons">lock</i> Change Password</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html"
+                    ><i class="material-icons">power_settings_new</i> Sign
+                    Out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <aside class="aside main-nav">
+        <a href="#" class="header-btn" id="menu-toggle">
+          <i class="material-icons"> menu </i>
+        </a>
+        <div class="client-details">
+          <a href="#" class="client-logo">
+            <img
+              src="assets/images/client/caesars-logo.png"
+              alt="Caesars Inc."
+              height="24px"
+            />
+          </a>
+          <span class="client-locale"
+            ><i class="material-icons">room</i> US</span
+          >
+          <span class="client-type">Virtual Retail</span>
+        </div>
+        <nav>
+          <!-- <ul class="side-nav"> -->
+            <!-- <li> -->
+              <!-- <a href="dashboard.html" class="active"> -->
+                <!-- <i class="material-icons icon">dashboard</i> -->
+                <!-- <span>Dashboard</span> -->
+              <!-- </a> -->
+            <!-- </li> -->
+            <!-- <li> -->
+              <!-- <a href="#"> -->
+                <!-- <i class="material-icons icon">settings</i> -->
+                <!-- <span>Core Simplified</span> -->
+              <!-- </a> -->
+            <!-- </li> -->
+            <!-- <li> -->
+              <!-- <a href="#"> -->
+                <!-- <i class="material-icons icon">help_outline</i> -->
+                <!-- <span>Modeling</span> -->
+              <!-- </a> -->
+            <!-- </li> -->
+          <!-- </ul> -->
+          <div class="section-nav">
+            <h3>MVP</h3>
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#" class="active">Nav Link 1</a></li>
+              <li><a href="#">Nav Link 2</a></li>
+              <li><a href="#">Nav Link 3</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="overlay"></div>
+      </aside>
+      <aside class="primary-filters">
+        <h3>Filters</h3>
+        <ul>
+          <li>
+            <div class="input-group">
+              <label>Client</label>
+              <select class="client-search">
+                <option value="0" placeholder>Choose Client</option>
+                <option value="1">T-Mobile</option>
+                <option value="2">Ceasars</option>
+                <option value="3">Vodafone</option>
+                <option value="4">e-Telequote</option>
+                <option value="5">sky</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="input-group">
+              <label>Line of Business</label>
+              <select class="lineOB-search">
+                <option value="0" placeholder>Select Line of Business</option>
+                <option value="1">Virtual Retail</option>
+                <option value="2">Line of Business 2</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="input-group">
+              <label>Programs</label>
+              <select class="lineProg-search">
+                <option value="0" placeholder>Select Programs</option>
+                <option value="1">Program 1</option>
+                <option value="2">Program 2</option>
+                <option value="3">Program 3</option>
+                <option value="4">Program 4</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <div class="input-group">
+              <label>Skills</label>
+              <select class="lineSkills-search">
+                <option value="0" placeholder>Select Skills</option>
+                <option value="1">Skill 1</option>
+                <option value="2">Skill 2</option>
+                <option value="3">Skill 3</option>
+                <option value="4">Skill 4</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="btn btn-rounded filters"
+              >Cancel</a
+            >
+            <a href="javascript:void(0);" class="btn btn-rounded red filters"
+              >Apply</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main id="main">
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col-xl-24">
+              <div class="selected-filters">
+                <ul>
+                  <!-- <li><i class="material-icons">filter_list</i></li> -->
+                  <li><a class="pill">Virtual Retail</a></li>
+                  <li><a class="pill">Programs (3)</a></li>
+                  <li><a class="pill">Skills (All)</a></li>
+                </ul>
+              </div>
+              <div class="filters-bar">
+                <div class="filter">
+                  <ul class="group-btn">
+                    <li
+                      class="group-btn-item group-btn-switcher selected"
+                      data-value="mtd"
+                    >
+                      MTD
+                    </li>
+                    <li
+                      class="group-btn-item group-btn-switcher"
+                      data-value="7days"
+                    >
+                      7 Days
+                    </li>
+                    <li
+                      class="group-btn-item group-btn-switcher"
+                      data-value="qtr"
+                    >
+                      Quarter
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter">
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="daterange"
+                    value="01/01/2018 - 01/15/2018"
+                  />
+                </div>
+                <div class="filter" style="display:none;">
+                  <select name="">
+                    <option value="">Some Filter</option>
+                    <option value="">bbb</option>
+                    <option value="">ccc</option>
+                  </select>
+                </div>
+                <div class="filter" style="display: none;">
+                  <select name="">
+                    <option value="">Filter</option>
+                    <option value="">bbb</option>
+                    <option value="">ccc</option>
+                  </select>
+                </div>
+                <div class="apply-filters" style="display:none;">
+                  <a href="#" class="btn ripple">Go</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-xl-19">
+              <div class="visualization ">
+                <div class="row">
+                  <div class="col-xl-24">
+                    <div class="row">
+                      <div class="col-xl-7">
+                        <h2 class="chart-heading-one ">
+                          <select name="" id="" class="sales_filter">
+                            <option value="cat">Sales</option>
+                            <option value="dog">Sales 2</option>
+                            <option value="fish">Sales 3</option>
+                          </select>
+                          <span class="polarity">+</span>
+                          $91,280 <span class="range">MTD</span>
+                        </h2>
+                      </div>
+                      <div class="col-xl-17">
+                        <div class="row no-gutters mt-4">
+                          <div class="col-xl-24 text-right">
+                            <div class="chart-select">
+                              <span id="toggle-dlabels" class="label_toggle"
+                                ><i class="material-icons">visibility</i>
+                                Labels</span
+                              >
+                              <select
+                                name=""
+                                id="visualChanger"
+                                class="genSelect"
+                                onchange="changeDiv(this);"
+                              >
+                                <option>Primary</option>
+                                <option value="div1" selected>Gain</option>
+                                <option value="div2">Call Volumes</option>
+                                <option value="div3">C. Incr. Outcomes</option>
+                                <option value="div4"
+                                  >C. Incr. Outcomes Trend</option
+                                >
+                                <option value="div5"
+                                  >C. Incr. Outcomes Predictor</option
+                                >
+                                <option value="div6">Conversion Rate</option>
+                              </select>
+                            </div>
+                            <div class="chart-select">
+                              <select
+                                name=""
+                                id="visualChanger"
+                                class="genSelect"
+                              > 
+                                <option>Secondary</option>
+                                <option value="div5">Outcomes</option>
+                                <option value="div3" selected
+                                  >Call Volumes</option
+                                >
+                                <option value="div5">Conversion Rate</option>
+                                <option value="div5">Hide</option>
+                              </select>
+                            </div>
+
+                            <div class="tabular-select" style="display:none;">
+                              <select
+                                name=""
+                                id="visualChanger"
+                                class="genSelect"
+                              >
+                                <option>Gain</option>
+                                <option>Outcomes</option>
+                              </select>
+                            </div>
+                            <div class="tabular-options">
+                            
+                                <!-- <ul class="group-btn"> -->
+                                  <!-- <li -->
+                                    <!-- title="Visualization View" -->
+                                    <!-- class="group-btn-item group-btn-switcher selected" -->
+                                    <!-- data-value="mtd" -->
+                                  <!-- > -->
+                                    <!-- <i class="material-icons">pie_chart</i> -->
+                                  <!-- </li> -->
+                                  <!-- <li -->
+                                    <!-- title="Tabular View" -->
+                                    <!-- class="group-btn-item group-btn-switcher" -->
+                                    <!-- data-value="7days" -->
+                                  <!-- > -->
+                                    <!-- <i class="material-icons">table_chart</i> -->
+                                  <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- <span class="export-data"> -->
+                                  <!-- <i class="material-icons">save_alt</i> -->
+                                <!-- </span> -->
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-24">
+                    <div class="charts chart-body">
+                      <div class="chart-duration-controls">
+                        <ul>
+                          <li><a href="#">Day</a></li>
+                          <li><a href="#">Week</a></li>
+                          <li><a href="#" class="active ">Month</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="div_elem" id="div1">
+                        <div id="GainChart__1" class="dash-charts"></div>
+                        <!-- <div id="GainChart__2" style="height: 400px;"></div> -->
+                        <!-- <button id="data-labels">Toggle data labels and range series</button> -->
+                      </div>
+                      <div id="div2" class="div_elem" style="display: none;">
+                        <div id="CallVolumesChart__1" class="dash-charts"></div>
+                      </div>
+                      <div id="div3" class="div_elem" style="display: none;">
+                        <div
+                          id="CallVolumesIncrOutcomeChart_bar"
+                          class="dash-charts"
+                        ></div>
+                        <div
+                          id="CallVolumesChart__1"
+                          class="dash-charts"
+                          style="display:none;"
+                        ></div>
+                      </div>
+                      <div id="div4" class="div_elem" style="display: none;">
+                        <!-- <img src="assets/images/Incremental- Outcomes-big.jpg" alt=""> -->
+                        <div id="CallVolumesChart__2" class="dash-charts"></div>
+                      </div>
+                      <div id="div5" class="div_elem" style="display: none;">
+                        <div class="benchmar-selector text-right">
+                          <label>Incremental<br />Predictor</label>
+                          <select
+                            name=""
+                            id="change_series_dd"
+                            class="genSelect"
+                          >
+                            <option value="50">On ~ off</option>
+                            <option value="50">20% ~ 80%</option>
+                            <option value="100">50% ~ 50%</option>
+                          </select>
+                        </div>
+
+                        <div
+                          id="CallVolumesIncrOutcomeChart_line"
+                          class="dash-charts"
+                        ></div>
+                      </div>
+
+                      <div id="div6" class="div_elem" style="display: none;">
+                        <div
+                          id="ConversionRateChart__1"
+                          class="dash-charts"
+                        ></div>
+                      </div>
+
+                      <div class="secondardy-chart" style="height: 120px;">
+                        <div
+                          id="CallVolumesChart__3"
+                          style="height: 150px;"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="tabular-data mt-2">
+                      <table cell-spacing="0" cell-padding="0" class="tabview">
+                        <thead>
+                          <!-- <tr>
+                            <th></th>
+                            <th colspan="2">Gain</th>
+                            <th colspan="3">Outcomes</th>
+                            <th colspan="2">Conversion<br />Rate</th>
+                            <th colspan="3">Call<br />Volumes</th>
+                            <th>Incremental<br />Outcomes</th>
+                          </tr> -->
+                          <tr>
+                            <th>Day</th>
+                            <th>Gain</th>
+                            <th>Confidence +/-</th>
+                            <th>On RGU</th>
+                            <th>Off RGU</th>
+                            <th>Total RGU</th>
+                            <th>On RGU Yield</th>
+                            <th>Off RGU Yield</th>
+                            <th>On Calls</th>
+                            <th>Off Calls</th>
+                            <th>Total Calls</th>
+                            <th>Inc. RGU</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Thu, Nov 01, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Fri, Nov 02, 2018</td>
+                            <td class="green-txt">0.12%</td>
+                            <td>21.92%</td>
+                            <td class="blue-txt">114</td>
+                            <td class="orange-txt">125</td>
+                            <td>239</td>
+                            <td class="blue-txt">12.11%</td>
+                            <td class="orange-txt">12.10%</td>
+                            <td class="blue-txt">941</td>
+                            <td class="orange-txt">1,033</td>
+                            <td>1,974</td>
+                            <td class="green-txt">0.13</td>
+                          </tr>
+                          <tr>
+                            <td>Sat, Nov 03, 2018</td>
+                            <td class="purple">-37.44%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">64</td>
+                            <td class="orange-txt">96</td>
+                            <td>160</td>
+                            <td class="blue-txt">8.95%</td>
+                            <td class="orange-txt">14.31%</td>
+                            <td class="blue-txt">715</td>
+                            <td class="orange-txt">671</td>
+                            <td>1,368</td>
+                            <td class="purple">-38.30</td>
+                          </tr>
+                          <tr>
+                            <td>Sun, Nov 04, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Mon, Nov 05, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Tue, Nov 06, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Wed, Nov 07, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Thu, Nov 08, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Fri, Nov 09, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Sat, Nov 10, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Sun, Nov 11, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Mon, Nov 12, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Tue, Nov 13, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Wed, Nov 14, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Thu, Nov 15, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Fri, Nov 16, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Sat, Nov 17, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Sun, Nov 18, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Mon, Nov 19, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Tue, Nov 20, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Wed, Nov 21, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Thu, Nov 22, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Fri, Nov 23, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Sun, Nov 25, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Mon, Nov 26, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Tue, Nov 27, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Wed, Nov 28, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Thu, Nov 29, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                          <tr>
+                            <td>Fri, Nov 30, 2018</td>
+                            <td class="green-txt">30.24%</td>
+                            <td>32.08%</td>
+                            <td class="blue-txt">102</td>
+                            <td class="orange-txt">81</td>
+                            <td>183</td>
+                            <td class="blue-txt">11.66%</td>
+                            <td class="orange-txt">8.95%</td>
+                            <td class="blue-txt">875</td>
+                            <td class="orange-txt">905</td>
+                            <td>1,780</td>
+                            <td class="green-txt">23.69</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td class="white">Total</td>
+                            <td class="purple">-7.29%</td>
+                            <td class="white">4.82%</td>
+                            <td class="blue-txt">2,095</td>
+                            <td class="orange-txt">2257</td>
+                            <td class="white">4,352</td>
+                            <td class="blue-txt">9.86%</td>
+                            <td class="orange-txt">10.68%</td>
+                            <td class="blue-txt">21,250</td>
+                            <td class="orange-txt">21,138</td>
+                            <td class="white">42,388</td>
+                            <td class="purple">-164.81</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 mt-4">
+              <div class="dash-kpi">
+                <ul>
+                  <li>
+                    <div class="kpi-box shaded">
+                      <h4>Gain
+                          <span>When Afiniti On</span>
+                      </h4>
+                      <h3 class="big">
+                        <i class="material-icons"
+                          >add</i
+                        >7.29% 
+                      </h3>
+                      <div class="afiniti">
+                        <!-- <img
+                          src="assets/images/logo.svg"
+                          alt="afiniti"
+                          style="width: auto; height: 20px;"
+                        /> -->
+                        <ul class="gain-widget">
+                          <li>
+                            <h3 class="orange-txt">
+                              20%
+                              <span>On</span>
+                            </h3>
+                          </li>
+                          <li>
+                            <h3 class="blue-txt">
+                              80%
+                              <span>Off</span>
+                            </h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="kpi-box">
+                      <h4>Number of Calls</h4>
+                      <ul>
+                        <li>
+                          <h3 class="blue-txt">
+                            21,250
+                            <!-- <small>Afiniti On</small> -->
+                          </h3>
+                        </li>
+                        <li>
+                          <h3 class="orange-txt">
+                            21,138
+                            <!-- <small>Afiniti Off</small> -->
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="kpi-box">
+                      <h4>Confidence (+/-)</h4>
+                      <h3>4.82%</h3>
+
+                      <div class="switches">
+                        <div class="switch flat">
+                          <input type="checkbox" id="switch" />
+                          <label for="switch"><span></span></label>
+                        </div>
+                        <div class="switch trend">
+                          <input type="checkbox" id="switch1" />
+                          <label for="switch1"><span></span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="kpi-box">
+                      <h4>Incremental Sales</h4>
+                      <h3 class="">
+                        <i class="material-icons incre-sales-kpi"
+                          >remove</i
+                        >164.81
+                      </h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="kpi-box">
+                      <h4>Conversion Rate</h4>
+                      <ul>
+                        <li>
+                          <h3>
+                            9.86%
+                            <!-- <small>Afiniti On</small> -->
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            10.86%
+                            <!-- <small>Afiniti Off</small> -->
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+    ></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/select_search.js"></script>
+
+    <!-- HIGHCHARTS -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/custom_highcharts.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <script>
+      function changeDiv($this) {
+        var selected_elem = $this.value;
+        if ($("#" + selected_elem).length) {
+          $(".div_elem").hide();
+          $("#" + selected_elem).show();
+        }
+      }
+
+      // Visualization switcher
+
+      $(".tabular-options li").on('click',function(){
+        $(".visualization").toggleClass("tabular");
+      });
+
+      $(document).ready(function() {
+        // new WOW().init();
+
+        var start = moment().startOf("month");
+        var end = moment();
+
+        function cb(start, end) {
+          $("#reportrange span").html(
+            start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+          );
+        }
+
+        $('input[name="daterange"]').daterangepicker({
+          timePicker: true,
+          timePicker: false,
+          opens: "left",
+          startDate: start,
+          endDate: end
+        });
+      });
+    </script>
+  </body>
+</html>

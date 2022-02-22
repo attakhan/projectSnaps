@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="assets/css/app.css" media="all">
+    <title>afiniti - Phattail</title>
+</head>
+
+<body class="darkBg">
+<div id="app" class="app">
+    <header id="header">
+        <div class="client-details">
+            <a class="client-logo">
+                <img src="assets/images/client/caesars-logo.png" alt="Caesars Inc." height="24px">
+            </a>
+            <!-- <span class="client-locale"><i class="material-icons">room</i> US</span> -->
+            <!-- <a href="javascript:void(0);" title="Show Filter" class="show-filters"> -->
+                <!-- <i class="material-icons">tune</i> -->
+            <!-- </a> -->
+        </div>
+        <div class="search-container">
+
+        </div>
+        <div class="controls-container">
+            <a href="javascript:void(0);"><i class="material-icons">search</i></a>
+            <a href="javascript:void(0);"><i class="material-icons">print</i></a>
+            <div class="notification-container">
+                <a href="javascript:void(0);"><i class="material-icons">notifications</i></a>
+                <div class="dropdown notifications">
+                    <h5><span>4</span> New Notifications</h5>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <i class="material-icons green">check</i>
+                                <span>
+                                    <notification>Login Campaign Successful</notification>
+                                    <time>01:45:10</time>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="active">
+                                <i class="material-icons blue">access_time</i>
+                                <span>
+                                    <notification>Login Campaign Successful</notification>
+                                    <time>01:45:10</time>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <i class="material-icons red">power_settings_new</i>
+                                <span>
+                                    <notification>Login Campaign Successful</notification>
+                                    <time>01:45:10</time>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <i class="material-icons green">check</i>
+                                <span>
+                                    <notification>Login Campaign Successful</notification>
+                                    <time>01:45:10</time>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Show all notifications</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <a href="javascript:void(0);" class="profile-details">
+                    <span class="text">
+                        <div class="name">Jennifer Ronald</div>
+                        <div class="designation">Manager</div>
+                    </span>
+                    <span class="image">
+                        <img src="assets/images/profile-01.png" alt="">
+                    </span>
+                </a>
+                <div class="dropdown user">
+                    <div class="image">
+                        <img src="assets/images/profile-01.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Jennifer Ronald</div>
+                        <div class="designation">Manager</div>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0);"><i class="material-icons">person</i> Profile</a></li>
+                        <li><a href="javascript:void(0);" class="active"><i class="material-icons">lock</i> Change Password</a></li>
+                        <li><a href="index.html"><i class="material-icons">power_settings_new</i> Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="aside main-nav">
+        <a href="javascript:void(0);" class="header-btn" id="menu-toggle">
+            <i class="material-icons"> menu </i>
+        </a>
+        <div class="client-details">
+            <a href="javascript:void(0);" class="client-logo">
+                <img src="assets/images/client/caesars-logo.png" alt="Caesars Inc." height="24px">
+            </a>
+            <span class="client-locale"><i class="material-icons">room</i> US</span>
+            <span class="client-type">Virtual Retail</span>
+        </div>
+        <nav>
+            <!-- <ul class="side-nav"> -->
+                <!-- <li> -->
+                    <!-- <a href="dashboard.html" class="active"> -->
+                        <!-- <i class="material-icons icon">dashboard</i> -->
+                        <!-- <span>Dashboard</span> -->
+                    <!-- </a> -->
+                <!-- </li> -->
+                <!-- <li> -->
+                    <!-- <a href="javascript:void(0);"> -->
+                        <!-- <i class="material-icons icon">settings</i> -->
+                        <!-- <span>Core Simplified</span> -->
+                    <!-- </a> -->
+                <!-- </li> -->
+                <!-- <li> -->
+                    <!-- <a href="javascript:void(0);"> -->
+                        <!-- <i class="material-icons icon">help_outline</i> -->
+                        <!-- <span>Modeling</span> -->
+                    <!-- </a> -->
+                <!-- </li> -->
+            <!-- </ul> -->
+            <div class="section-nav">
+                <h3>MVP</h3>
+                <ul>
+                    <li><a href="javascript:void(0);">Dashboard</a></li>
+                    <li><a href="javascript:void(0);" class="active">Nav Link 1</a></li>
+                    <li><a href="javascript:void(0);">Nav Link 2</a></li>
+                    <li><a href="javascript:void(0);">Nav Link 3</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="overlay"></div>
+    </aside>
+    <aside class="primary-filters">
+        <h3>Filters</h3>
+        <ul>
+            <li>
+                <div class="input-group">
+                    <label>Client</label>
+                    <select class="client-search">
+                        <option value="0" placeholder>Choose Client</option>
+                        <option value="1">T-Mobile</option>
+                        <option value="2">Ceasars</option>
+                        <option value="3">Vodafone</option>
+                        <option value="4">e-Telequote</option>
+                        <option value="5">sky</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="input-group">
+                    <label>Line of Business</label>
+                    <select class="lineOB-search">
+                        <option value="0" placeholder>Select Line of Business</option>
+                        <option value="1">Virtual Retail</option>
+                        <option value="2">Line of Business 2</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="input-group">
+                    <label>Programs</label>
+                    <select class="lineProg-search">
+                        <option value="0" placeholder>Select Programs</option>
+                        <option value="1">Program 1</option>
+                        <option value="2">Program 2</option>
+                        <option value="3">Program 3</option>
+                        <option value="4">Program 4</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="input-group">
+                    <label>Skills</label>
+                    <select class="lineSkills-search">
+                        <option value="0" placeholder>Select Skills</option>
+                        <option value="1">Skill 1</option>
+                        <option value="2">Skill 2</option>
+                        <option value="3">Skill 3</option>
+                        <option value="4">Skill 4</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="btn btn-rounded filters">Cancel</a>
+                <a href="javascript:void(0);" class="btn btn-rounded red filters">Apply</a>
+            </li>
+        </ul>
+    </aside>
+
+    <div id="main">
+        <div class="container-fluid">
+            <div class="row mar-btm-50">
+                <div class="col-md-18">
+                    <h2 class="afiniti-swirl">AI PERSONA HYPOTHETICAL<span
+                            class="model-name">Saved Persona: R2 D2</span></h2>
+                </div>
+                <!-- <div class="col-md-6 text-right"> -->
+                    <!-- <a href="#" class="btn btn-rounded small red">Done <i class="material-icons">arrow_forward</i></a> -->
+                <!-- </div> -->
+            </div>
+            <div class="row mar-btm-50">
+                <div class="col-md-6">
+                    <div class="card dark partitioned">
+                        <!-- <div class="card-header"> -->
+                            <!-- <h3><span class="icon-circle"><i class="material-icons">trending_up</i></span> Summary</h3> -->
+                        <!-- </div> -->
+                        <div class="card-body pad-left-right-30">
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <p>This is an extrapolation of what this persona (and any comparative personas) would look like if they had been applied for a previous 30 day period as a point of reference:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <h4>Active Period</h4>
+                                        <span class="date">Mar 1 - Mar 30, 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <h4>Persona</h4>
+                                        <span class="value">Persona X</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <img src="assets/images/logo.svg" class="afiniti-kpi-logo" alt="afiniti">
+                                        <ul class="kpi-list">
+                                            <li>
+                                                <h3 class="orange-txt">
+                                                    90%
+                                                    <span>On</span>
+                                                </h3>
+                                            </li>
+                                            <li>
+                                                <h3 class="blue-txt">
+                                                    10%
+                                                    <span>Off</span>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <h4>Confidence</h4>
+                                        <span class="value">+/- 2.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <h3 class="josefin-heading">Result vs "Off"</h3>
+                                        <ul class="kpi-list">
+                                            <li>
+                                                <h4>Revenue</h4>
+                                                <h3>+ $79,600</h3>
+                                            </li>
+                                            <li>
+                                                <h4>Gain</h4>
+                                                <h3>+ 3.8%</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-18">
+                    <div class="row bordered-sec-heading no-gutters">
+                        <div class="col-md-12">
+                            <h4>Persona Effects</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select name="">
+                                    <option value="">R2 D2</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
+                                <label class="control-label">Persona(s)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select name="">
+                                    <option value="">All</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
+                                <label class="control-label">Visualization</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-24">
+                            <ul class="legend">
+                                <li><span class="blue"></span> Afiniti Off</li>
+                                <li><span class="green"></span> Persona R2 D2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-container">
+                                <div class="quadrant-chart">
+                                    <h4 class="chart-heading">Business Model</h4>
+                                    <span class="chart-label x-label">Revenue <span>Daily avg. incremental revenue</span></span>
+                                    <span class="chart-label y-label">Cost <span>Daily avg. incremental costs</span></span>
+                                    <span class="marker blue off">
+                                        <span class="marker-label">OFF</span>
+                                    </span>
+                                    <span class="marker green" style="top: 30%; left: 70%">
+                                        <span class="marker-label">Great Gains</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="chart-container">
+                                <div id="agent-wait-time-variance"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="chart-container">
+                                <div id="caller-wait-time-variance"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="chart-container">
+                                <div id="agent-utilization-variance"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="chart-container">
+                                <div id="agent-priorities"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/select_search.js"></script>
+
+<!-- HIGHCHARTS -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+
+<script src="assets/js/custom.js"></script>
+
+<script>
+    function changeDiv($this) {
+        var selected_elem = $this.value;
+        if ($('#' + selected_elem).length) {
+            $('.div_elem').hide();
+            $('#' + selected_elem).show();
+        }
+    }
+
+    $(document).ready(function () {
+        // new WOW().init();
+        var start = moment().startOf('month');
+        var end = moment();
+
+        function cb(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+
+        $('input[name="daterange"]').daterangepicker({
+            timePicker: true,
+            timePicker: false,
+            opens: 'left',
+            startDate: start,
+            endDate: end,
+        });
+
+        Highcharts.chart('agent-wait-time-variance', {
+            title: {
+                text: "AGENT WAIT TIME VARIANCE",
+                align: 'left',
+                style: {
+                    fontFamily: "\'ProximaNova-Bold\', sans-serif",
+                    fontSize: "16px",
+                    color: '#ffffff',
+                }
+            },
+            tooltip: {
+                crosshairs: {
+                    color: "#454d66",
+                    dashStyle: "solid"
+                },
+                shared: true,
+                useHTML: true,
+                padding: 15,
+                borderWidth: 1,
+                borderColor: "#717b96",
+                backgroundColor: "#323852",
+                style: {
+                    fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                    fontSize: "12px",
+                    fontWeight: "normal",
+                    color: 'white',
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+            },
+
+            yAxis: {
+                gridLineColor: 'transparent',
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 10,
+                title: {
+                    text: 'Seconds',
+                    x: -10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694',
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            xAxis: {
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                // tickInterval: 1,
+                title: {
+                    text: 'Percentile',
+                    y: 10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694'
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            legend: {
+                enabled: false,
+                layout: 'horizontal',
+                align: 'right',
+                verticalAlign: 'top',
+                useHTML: true,
+                labelFormatter: function() {
+                    return (
+                        "<span style=\"color: #717c98; transform: translateY(20px); font-size: 12px; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                        this.name +
+                        "</span>"
+                    );
+                },
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 1,
+                }
+            },
+
+            series: [{
+                name: 'Great Gains',
+                data: [40, 50, 30, 20],
+                color: '#26a69a',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#26a69a",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }, {
+                name: 'OFF',
+                data: [60, 40, 15, 0],
+                color: '#4072ee',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#4072ee",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }],
+
+
+
+        });
+        Highcharts.chart('caller-wait-time-variance', {
+            title: {
+                text: "CALLER WAIT TIME VARIANCE",
+                align: 'left',
+                style: {
+                    fontFamily: "\'ProximaNova-Bold\', sans-serif",
+                    fontSize: "16px",
+                    color: '#ffffff',
+                }
+            },
+            tooltip: {
+                crosshairs: {
+                    color: "#454d66",
+                    dashStyle: "solid"
+                },
+                shared: true,
+                useHTML: true,
+                padding: 15,
+                borderWidth: 1,
+                borderColor: "#717b96",
+                backgroundColor: "#323852",
+                style: {
+                    fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                    fontSize: "12px",
+                    fontWeight: "normal",
+                    color: 'white',
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+            },
+
+            yAxis: {
+                gridLineColor: 'transparent',
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 10,
+                title: {
+                    text: 'Seconds',
+                    x: -10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694',
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            xAxis: {
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                // tickInterval: 1,
+                title: {
+                    text: 'Percentile',
+                    y: 10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694'
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            legend: {
+                enabled: false,
+                layout: 'horizontal',
+                align: 'right',
+                verticalAlign: 'top',
+                useHTML: true,
+                labelFormatter: function() {
+                    return (
+                        "<span style=\"color: #717c98; transform: translateY(20px); font-size: 12px; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                        this.name +
+                        "</span>"
+                    );
+                },
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 1,
+                }
+            },
+
+            series: [{
+                name: 'Great Gains',
+                data: [40, 50, 30, 20],
+                color: '#26a69a',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#26a69a",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }, {
+                name: 'OFF',
+                data: [60, 40, 15, 0],
+                color: '#4072ee',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#4072ee",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }],
+
+
+
+        });
+        Highcharts.chart('agent-utilization-variance', {
+            title: {
+                text: "AGENT UTILIZATION VARIANCE",
+                align: 'left',
+                style: {
+                    fontFamily: "\'ProximaNova-Bold\', sans-serif",
+                    fontSize: "16px",
+                    color: '#ffffff',
+                }
+            },
+            tooltip: {
+                crosshairs: {
+                    color: "#454d66",
+                    dashStyle: "solid"
+                },
+                shared: true,
+                useHTML: true,
+                padding: 15,
+                borderWidth: 1,
+                borderColor: "#717b96",
+                backgroundColor: "#323852",
+                style: {
+                    fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                    fontSize: "12px",
+                    fontWeight: "normal",
+                    color: 'white',
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+            },
+
+            yAxis: {
+                gridLineColor: 'transparent',
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 10,
+                title: {
+                    text: 'Percent Occupancy',
+                    x: -10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694',
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            xAxis: {
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 1,
+                title: {
+                    text: 'Percentile',
+                    y: 10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694'
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            ordinal_suffix_of(this.value) +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            legend: {
+                enabled: false,
+                layout: 'horizontal',
+                align: 'right',
+                verticalAlign: 'top',
+                useHTML: true,
+                labelFormatter: function() {
+                    return (
+                        "<span style=\"color: #717c98; transform: translateY(20px); font-size: 12px; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                        this.name +
+                        "</span>"
+                    );
+                },
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 1,
+                }
+            },
+
+            series: [{
+                name: 'Great Gains',
+                data: [40, 50, 30, 20],
+                color: '#26a69a',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#26a69a",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }, {
+                name: 'OFF',
+                data: [60, 40, 15, 0],
+                color: '#4072ee',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#4072ee",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }],
+
+
+
+        });
+        Highcharts.chart('agent-priorities', {
+            title: {
+                text: "AGENT PRIORITIES",
+                align: 'left',
+                style: {
+                    fontFamily: "\'ProximaNova-Bold\', sans-serif",
+                    fontSize: "16px",
+                    color: '#ffffff',
+                }
+            },
+            tooltip: {
+                crosshairs: {
+                    color: "#454d66",
+                    dashStyle: "solid"
+                },
+                shared: true,
+                useHTML: true,
+                padding: 15,
+                borderWidth: 1,
+                borderColor: "#717b96",
+                backgroundColor: "#323852",
+                style: {
+                    fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                    fontSize: "12px",
+                    fontWeight: "normal",
+                    color: 'white',
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+            },
+
+            yAxis: {
+                gridLineColor: 'transparent',
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 10,
+                title: {
+                    text: 'Percent of Calls',
+                    x: -10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694',
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            this.value +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            xAxis: {
+                lineColor: 'transparent',
+                lineWidth: 0,
+                tickWidth: 0,
+                tickInterval: 1,
+                title: {
+                    text: 'Priority',
+                    y: 10,
+                    style: {
+                        fontFamily: "\'ProximaNova-SemiBold\', sans-serif",
+                        fontSize: "14px",
+                        color: '#6b7694'
+                    }
+                },
+                labels: {
+                    useHTML: true,
+                    align: 'center',
+                    formatter: function() {
+                        return (
+                            "<span style=\"color: #6b7694; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                            ordinal_suffix_of(this.value) +
+                            "</span>"
+                        );
+                    }
+                },
+            },
+
+            legend: {
+                enabled: false,
+                layout: 'horizontal',
+                align: 'right',
+                verticalAlign: 'top',
+                useHTML: true,
+                labelFormatter: function() {
+                    return (
+                        "<span style=\"color: #717c98; transform: translateY(20px); font-size: 12px; font-family: 'ProximaNova-Regular', sans-serif\">" +
+                        this.name +
+                        "</span>"
+                    );
+                },
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 1,
+                }
+            },
+
+            series: [{
+                name: 'Great Gains',
+                data: [40, 50, 30, 20],
+                color: '#26a69a',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#26a69a",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }, {
+                name: 'OFF',
+                data: [60, 40, 15, 0],
+                color: '#4072ee',
+                marker: {
+                    symbol: "circle",
+                    fillColor: "#4072ee",
+                    lineWidth: 2,
+                    lineColor: "#11172c",
+                    radius: 5
+                },
+                label: {
+                    style: {
+                        fontFamily: "\'ProximaNova-Regular\', sans-serif",
+                        fontSize: "12px",
+                        color: '#f0f3fb',
+                        fontWeight: "normal"
+                    }
+                }
+            }],
+
+
+
+        });
+    });
+</script>
+</body>
+</html>
